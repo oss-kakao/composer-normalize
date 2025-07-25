@@ -1,4 +1,4 @@
-name: Olive Action
+name: OLIVE Action
 
 on:
   pull_request:
@@ -24,14 +24,14 @@ permissions:
   
 jobs:
   olive-scan:
-    name: Olive CLI Scan
+    name: OLIVE CLI Scan
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Run Olive CLI Scanner
+      - name: Run OLIVE CLI Scanner
         uses: oss-kakao/olive-actions@v1
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
